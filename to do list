@@ -1,0 +1,64 @@
+1. BG
+2. Data Overview
+3. Trand 2012-2025
+4. Seasonnal Pattern 
+5. Age Risk Analysis
+6. Simple Forecast
+7. Public Health Recommendation 
+
+
+
+
+
+ข้อมูล Pertussis 2012–2025
+มาวิเคราะห์เชิงลึก + หา Insight + ให้ข้อเสนอเชิงสาธารณสุข
+
+
+ทำ 4 อย่างนี้พอ (ชนะได้)
+
+
+1Trend 2012–2025
+กราฟจำนวนผู้ป่วยต่อปี
+ชี้ช่วงพุ่ง/ตก + เชื่อมกับนโยบาย/ช่วงโควิด
+
+
+
+Seasonality (ถ้ามีรายเดือน)
+เดือนไหนระบาดบ่อย
+หา pattern ซ้ำทุกปี
+Age Group (ถ้ามี)
+กลุ่มอายุไหนเสี่ยงสุด
+เชื่อมกับวัคซีน/booster
+
+
+
+Forecast แบบสถิติ
+Moving Average / Linear Regression
+เรียกว่า “Statistical Forecasting”
+
+สไลด์มีแค่นี้
+Background
+Data Overview
+Trend
+Seasonal / Age
+Forecast
+Recommendation
+
+
+โหลดไฟล์ dataset
+เปิดใน Python (pandas)
+ทำกราฟด้วย matplotlib / seaborn
+คำนวณค่า trend / average
+export รูปกราฟไปใส่สไลด์
+โค้ดพื้นฐานที่ต้องมี
+import pandas as pd
+import matplotlib.pyplot as plt
+df.groupby()
+plt.plot()
+
+วางไฟล์ .csv ไว้โฟลเดอร์เดียวกับไฟล์ .py
+แก้ 3 ตัวนี้ให้ตรงกับ dataset มึง: DATE_COL, CASE_COL, (ถ้ามี) AGE_COL
+Run แล้วเอารูป 01_*.png ไปแปะสไลด์ได้เลย
+
+
+
